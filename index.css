@@ -1,0 +1,13 @@
+header {
+    width:100%;
+    height:20%
+}
+
+#container {
+    position:relative
+}
+.banner {
+    display: flex;
+    background-color: lightblue;
+    margin:0%
+}
