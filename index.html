@@ -1,7 +1,7 @@
 <html>
     <head>
-        <title></title>
-        <link rel="icon" type="image/x-icon" href="./images/amongus.jpg">
+        <title>Videojuegos HTML i CSS</title>
+        <link rel="icon" type="image/x-icon" href="./images/amongus.png">
         <meta charset="UTF-8">
         <meta name="author" content="Ezequiel Garibotto">
         <meta name="description" content="Practica 3">
@@ -10,7 +10,7 @@
             body {
                 font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
                 width: 100%;
-                margin:0%;
+                margin: 0%;
             }   
             #banner {
                 display: flex;
@@ -22,6 +22,8 @@
                 display:flex;
                 margin-left:auto;
                 margin-right:auto;
+                height: 100px;
+                width: 100px;
             }
             #menu {
                 display: flex;
@@ -36,6 +38,7 @@
                 flex-direction: row;
                 padding-left: 0.75%;
                 padding-right: 0.75%;
+                cursor: pointer;
             }
             #tituloVjuegos {
                 display:flex;
@@ -43,21 +46,40 @@
                 margin: 15px;;
                 justify-content:start
             }
+            #tituloVJuego {
+                text-align: center;
+            }
+            #textoVJuegos {
+                padding-left: 2.5%;
+                padding-right: 2.5%;
+                padding-top: 2.5%;
+                padding-bottom: 2.5%;
+            }
             #fotosJuegos {
                 height: 300;
                 width: 480;
             }
-            #videojuegos {
+            .containerVj {
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: space-evenly;
+                margin:5%
+            }
+            .videojuegos {
+                display:flex;
+
                 display:inline-block;
                 text-align: left;
-                border-radius: 2px;
-                border-style: dotted;
-                border-color: #FFC045;
+                border-style: groove;
+                border-radius: 5px;
+                border-color: green;
                 justify-content: space-around;
                 flex-direction: row;
                 position:relative;
                 margin: 40px;
                 width: 480;
+                border-width: 3px;
+                box-shadow: 10px 10px 5px gray;
             }
             footer {
                 display: flex;
@@ -78,6 +100,17 @@
                 flex-direction:column-reverse;
                 justify-content:center;
             }
+            button {
+                border-style: groove;
+                border-radius: 5px;
+                border-color: #FFC045;
+                padding-bottom: 1.5%;
+                padding-top: 1.5%;
+                padding-left: 1.5%;
+                padding-right: 1.5%;
+                background-color: #FFC045;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -89,40 +122,48 @@
                     </div>
                 </div>
                 <div id="menu">
-                    <div id="menutext"><h5>M04PLAY</h5></div>
-                    <div id="menutext"><h5>LEARNING</h5></div>
-                    <div id="menutext"><h5>PLAY</h5></div>
-                    <div id="menutext"><H5>OTHERS</H5></div>
+                    <div id="menutext"><h3>M04PLAY</h3></div>
+                    <div id="menutext"><h3>LEARNING</h3></div>
+                    <div id="menutext"><h3>PLAY</h3></div>
+                    <div id="menutext"><h3>OTHERS</h3></div>
                 </div>
             </div>
         </header>
         <h2 id="tituloVjuegos">Videojuegos</h2>
-            <section>
-                <article><div id="videojuegos">
-                    <img src="./images/garrys.jpg" with="150" height="150" id="fotosJuegos">
-                    <h3>Garry's Mod</h3>
-                    <p>Garry's Mod es un entorno que te permite jugar libremente con el motor físico. AL contrario de la mayoria de juegos, no hay metas u objetivos predeterminados</p>
-                </div></article>
-                <article><div id="videojuegos">
-                    <img src="./images/isaac.jpg" with="150" height="150" id="fotosJuegos">
-                    <h3>The Binding Of Isaac</h3>
-                    <p>Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
-                </div></article>
-                <article>
-                    <div id="videojuegos">
-                        <img src="./images/granturismo5.jpg" with="150" height="150" id="fotosJuegos">
-                        <h3>The Binding Of Isaac</h3>
-                        <p>Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+            <article class="containerVj">
+                <section>
+                    <div class="videojuegos">
+                        <img src="./images/garrys.jpg" id="fotosJuegos">
+                        <h3 id="tituloVjuego">Garry's Mod</h3>
+                        <p id="textoVjuegos">Garry's Mod es un entorno que te permite jugar libremente con el motor físico. AL contrario de la mayoria de juegos, no hay metas u objetivos predeterminados</p>
+                        <button>más info</button>
                     </div>
-                </article>
-                <article>
-                    <div id="videojuegos">
-                        <img src="./images/guitarhero.jpg" with="150" height="150" id="fotosJuegos">
-                        <h3>Guitar hero</h3>
-                        <p>Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                </section>
+                <section>
+                    <div class="videojuegos">
+                        <img src="./images/isaac.jpg" id="fotosJuegos">
+                        <h3 id="tituloVjuego">The Binding Of Isaac</h3>
+                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                        <button>más info</button>
                     </div>
-                </article>
-        </section>
+                </section>
+                <section>
+                    <div class="videojuegos">
+                        <img src="./images/granturismo5.jpg" id="fotosJuegos">
+                        <h3 id="tituloVjuego">The Binding Of Isaac</h3>
+                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                        <button>más info</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="videojuegos">
+                        <img src="./images/guitarhero.jpg" id="fotosJuegos">
+                        <h3 id="tituloVjuego">Guitar hero</h3>
+                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                        <button>más info</button>
+                    </div>
+                </section>
+            </article>
         <footer>
             <div id="footerLinks"><h5>FACEBOOK</h5></div>
             <div id="footerLinks"></div><h5>TWITTER</h5></div>
