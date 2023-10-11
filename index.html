@@ -8,80 +8,119 @@
         <link rel="stylesheet" href="index.css">
         <style>
             body {
-                margin:0%;
                 font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
-                height: 1000px;
                 width: 100%;
+                margin:0%;
             }   
-            .banner {
+            #banner {
                 display: flex;
                 background-color: #0A91AB;
                 margin:0%;
                 height:100px
             }
-            #imagen {
-                height:50px;
+            #logo {
                 display:flex;
                 margin-left:auto;
                 margin-right:auto;
             }
-            .banner2 {
-                display:flex;
+            #menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 background-color: #FFC045;
-                position:relative;
-                margin:0%;
-                height:50px
+                height:50px;
+                width:100%;
             }
-            h2 {
+            #menutext {
+                display: flex;
+                flex-direction: row;
+                padding-left: 0.75%;
+                padding-right: 0.75%;
+            }
+            #tituloVjuegos {
+                display:flex;
                 color: #0A91AB;
-
+                margin: 15px;;
+                justify-content:start
             }
-            #garrys {
-                display:flex;
-                position:relative
+            #fotosJuegos {
+                height: 150;
+                width: 240;
             }
-            #isaac {
+            #videojuegos {
+                display:inline-block;
+                text-align: left;
+                justify-content: space-around;
+                flex-direction: row;
+                position:relative;
+                margin:40px;
+            }
+            footer {
+                display: flex;
+                height:100px;
+                width:100%;
+                background-color: #8A8070;
+            }
+            #footerLinks {
+                display: flex;
+                text-align: left;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding-left: 0.75%;
+                padding-right: 0.75%;
+            }
+            #copyright {
                 display:flex;
-                position:relative
+                flex-direction:column-reverse;
+                justify-content:center;
             }
         </style>
     </head>
     <body>
         <header>
             <div>
-                <div class="banner">
-                    <img src="./images/amongus.jpg" width="50" height="50" id="imagen">
+                <div id="banner">
+                    <div id="logo">
+                    <img src="./images/amongus.png" width="50" height="50" id="imagen">
+                    </div>
                 </div>
-                <div class="banner2">
+                <div id="menu">
+                    <div id="menutext"><h5>M04PLAY</h5></div>
+                    <div id="menutext"><h5>LEARNING</h5></div>
+                    <div id="menutext"><h5>PLAY</h5></div>
+                    <div id="menutext"><H5>OTHERS</H5></div>
                 </div>
             </div>
         </header>
+        <h2 id="tituloVjuegos">Videojuegos</h2>
             <section>
-                <h2>Videojuegos</h2>
-                <article><div class="garrys">
+                <article><div id="videojuegos">
+                    <img src="./images/garrys.jpg" with="150" height="150" id="fotosJuegos">
                     <h3>Garry's Mod</h3>
                     <p>Garry's Mod es un entorno que te permite jugar libremente con el motor físico. AL contrario de la mayoria de juegos, no hay metas u objetivos predeterminados</p>
                 </div></article>
-                <article><div class="isaac">
+                <article><div id="videojuegos">
+                    <img src="./images/isaac.jpg" with="150" height="150" id="fotosJuegos">
                     <h3>The Binding Of Isaac</h3>
                     <p>Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
                 </div></article>
-            </section>
-            <article>
-                <section>
-                    </juego>
-                </section>
-                <section>
-                    
-                </section>
-                <section>
-                    
-                </section>
-            </article>
-        
+                <article><div id="videojuegos">
+                    <img src="./images/granturismo5.jpg" with="150" height="150" id="fotosJuegos">
+                    <h3>The Binding Of Isaac</h3>
+                    <p>Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                </div></article>
+                <article><div id="videojuegos">
+                    <img src="./images/guitarhero.jpg" with="150" height="150" id="fotosJuegos">
+                    <h3>Guitar hero</h3>
+                    <p>Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                </div></article>
+        </section>
         <footer>
-
+            <div id="footerLinks"><h5>FACEBOOK</h5></div>
+            <div id="footerLinks"></div><h5>TWITTER</h5></div>
+            <div id="footerLinks"></div><h5>INSTAGRAM</h5></div>
+            <div id="footerLinks"></div><h5>RSS</h5></div>
+            <div id="copyright"><h5>Copyright © 2022-2023</h5></div>
         </footer>
     </body>
-    
 </html>
