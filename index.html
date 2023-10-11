@@ -7,11 +7,17 @@
         <meta name="description" content="Practica 3">
         <link rel="stylesheet" href="index.css">
         <style>
+            .header {
+                position:fixed;
+                width: 100%;
+                height: 100%;
+            }
             body {
                 font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
                 width: 100%;
+                height: 100%;
                 margin: 0%;
-            }   
+            }
             #banner {
                 display: flex;
                 background-color: #0A91AB;
@@ -33,6 +39,13 @@
                 height:50px;
                 width:100%;
             }
+            #linea {
+                background-color: black;
+                height: 3px;
+                display: flex;
+                width:100%;
+                justify-content: center;
+            }
             #menutext {
                 display: flex;
                 flex-direction: row;
@@ -43,11 +56,30 @@
             #tituloVjuegos {
                 display:flex;
                 color: #0A91AB;
-                margin: 15px;;
+                padding-left: 40px;
                 justify-content:start
             }
             #tituloVJuego {
                 text-align: center;
+            }
+            .containerVj {
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: space-evenly;
+                margin:1%
+            }
+            .videojuegos {
+                display:inline-block;
+                text-align: left;
+                border-style: groove;
+                border-radius: 5px;
+                border-color: green;
+                justify-content: space-around;
+                flex-direction: row;
+                margin: 40px;
+                width: 480;
+                border-width: 3px;
+                box-shadow: 10px 10px 5px gray;
             }
             #textoVJuegos {
                 padding-left: 2.5%;
@@ -58,28 +90,6 @@
             #fotosJuegos {
                 height: 300;
                 width: 480;
-            }
-            .containerVj {
-                display: flex;
-                flex-wrap:wrap;
-                justify-content: space-evenly;
-                margin:5%
-            }
-            .videojuegos {
-                display:flex;
-
-                display:inline-block;
-                text-align: left;
-                border-style: groove;
-                border-radius: 5px;
-                border-color: green;
-                justify-content: space-around;
-                flex-direction: row;
-                position:relative;
-                margin: 40px;
-                width: 480;
-                border-width: 3px;
-                box-shadow: 10px 10px 5px gray;
             }
             footer {
                 display: flex;
@@ -101,6 +111,7 @@
                 justify-content:center;
             }
             button {
+                justify-content: flex-end;
                 border-style: groove;
                 border-radius: 5px;
                 border-color: #FFC045;
@@ -115,10 +126,10 @@
     </head>
     <body>
         <header>
-            <div>
+            <div class="header">
                 <div id="banner">
                     <div id="logo">
-                    <img src="./images/amongus.png" width="50" height="50" id="imagen">
+                    <img src="./images/amongus.png" width="100" height="100" id="logo">
                     </div>
                 </div>
                 <div id="menu">
@@ -127,6 +138,7 @@
                     <div id="menutext"><h3>PLAY</h3></div>
                     <div id="menutext"><h3>OTHERS</h3></div>
                 </div>
+                <div id="linea">
             </div>
         </header>
         <h2 id="tituloVjuegos">Videojuegos</h2>
@@ -159,6 +171,22 @@
                     <div class="videojuegos">
                         <img src="./images/guitarhero.jpg" id="fotosJuegos">
                         <h3 id="tituloVjuego">Guitar hero</h3>
+                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                        <button>más info</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="videojuegos">
+                        <img src="./images/assassinscreed.jpg" id="fotosJuegos">
+                        <h3 id="tituloVjuego">Assassins Creed: Origins</h3>
+                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                        <button>más info</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="videojuegos">
+                        <img src="./images/hollowknight.jpg" id="fotosJuegos">
+                        <h3 id="tituloVjuego">Hollow Knight</h3>
                         <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
                         <button>más info</button>
                     </div>
