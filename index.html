@@ -6,123 +6,6 @@
         <meta name="author" content="Ezequiel Garibotto">
         <meta name="description" content="Practica 3">
         <link rel="stylesheet" href="index.css">
-        <style>
-            .header {
-                position:fixed;
-                width: 100%;
-                height: 100%;
-            }
-            body {
-                font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
-                width: 100%;
-                height: 100%;
-                margin: 0%;
-            }
-            #banner {
-                display: flex;
-                background-color: #0A91AB;
-                margin:0%;
-                height:100px
-            }
-            #logo {
-                display:flex;
-                margin-left:auto;
-                margin-right:auto;
-                height: 100px;
-                width: 100px;
-            }
-            #menu {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                background-color: #FFC045;
-                height:50px;
-                width:100%;
-            }
-            #linea {
-                background-color: black;
-                height: 2px;
-                display: flex;
-                width:100%;
-                justify-content: center;
-            }
-            #menutext {
-                display: flex;
-                flex-direction: row;
-                padding-left: 0.75%;
-                padding-right: 0.75%;
-                cursor: pointer;
-            }
-            #tituloVjuegos {
-                display:flex;
-                color: #0A91AB;
-                padding-left: 40px;
-                justify-content:start
-            }
-            #tituloVJuego {
-                text-align: center;
-            }
-            .containerVj {
-                display: flex;
-                flex-wrap:wrap;
-                justify-content: space-evenly;
-                margin:1%
-            }
-            .videojuegos {
-                display:inline-block;
-                text-align: left;
-                border-style: groove;
-                border-radius: 5px;
-                border-color: gray;
-                justify-content: space-around;
-                flex-direction: row;
-                margin: 40px;
-                width: 480;
-                border-width: 3px;
-                box-shadow: 10px 10px 5px gray;
-            }
-            #textoVJuegos {
-                padding-left: 2.5%;
-                padding-right: 2.5%;
-                padding-top: 2.5%;
-                padding-bottom: 2.5%;
-            }
-            #fotosJuegos {
-                height: 300;
-                width: 480;
-            }
-            footer {
-                display: flex;
-                height:100px;
-                width:100%;
-                background-color: #8A8070;
-            }
-            #footerLinks {
-                display: flex;
-                text-align: left;
-                flex-direction: row;
-                justify-content: flex-start;
-                padding-left: 0.75%;
-                padding-right: 0.75%;
-            }
-            #copyright {
-                display:flex;
-                flex-direction:column-reverse;
-                justify-content:center;
-            }
-            #masInfo {
-                justify-content: flex-end;
-                border-style: groove;
-                border-radius: 5px;
-                border-color: #FFC045;
-                padding-bottom: 1.5%;
-                padding-top: 1.5%;
-                padding-left: 1.5%;
-                padding-right: 1.5%;
-                background-color: #FFC045;
-                cursor: pointer;
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -141,69 +24,66 @@
                 <div id="linea">
             </div>
         </header>
-        <h2 id="tituloVjuegos">Videojuegos</h2>
-            <article class="containerVj">
-                <section>
-                    <div class="videojuegos">
-                        <img src="./images/garrys.jpg" id="fotosJuegos">
-                        <div id="linea"></div>
-                        <h3 id="tituloVjuego">Garry's Mod</h3>
-                        <p id="textoVjuegos">Garry's Mod es un entorno que te permite jugar libremente con el motor físico. AL contrario de la mayoria de juegos, no hay metas u objetivos predeterminados</p>
-                        <button id="masInfo">más info</button>
-                    </div>
-                </section>
-                <section>
-                    <div class="videojuegos">
-                        <img src="./images/isaac.jpg" id="fotosJuegos">
-                        <div id="linea"></div>
-                        <h3 id="tituloVjuego">The Binding Of Isaac</h3>
-                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
-                        <button id="masInfo">más info</button>
-                    </div>
-                </section>
-                <section>
-                    <div class="videojuegos">
-                        <img src="./images/granturismo5.jpg" id="fotosJuegos">
-                        <div id="linea"></div>
-                        <h3 id="tituloVjuego">Gran Turismo 5</h3>
-                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
-                        <button id="masInfo">más info</button>
-                    </div>
-                </section>
-                <section>
-                    <div class="videojuegos">
-                        <img src="./images/guitarhero.jpg" id="fotosJuegos">
-                        <div id="linea"></div>
-                        <h3 id="tituloVjuego">Guitar hero</h3>
-                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
-                        <button id="masInfo">más info</button>
-                    </div>
-                </section>
-                <section>
-                    <div class="videojuegos">
-                        <img src="./images/assassinscreed.jpg" id="fotosJuegos">
-                        <div id="linea"></div>
-                        <h3 id="tituloVjuego">Assassins Creed: Origins</h3>
-                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
-                        <button id="masInfo">más info</button>
-                    </div>
-                </section>
-                <section>
-                    <div class="videojuegos">
-                        <img src="./images/hollowknight.jpg" id="fotosJuegos">
-                        <div id="linea"></div>
-                        <h3 id="tituloVjuego">Hollow Knight</h3>
-                        <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
-                        <button id="masInfo">más info</button>
-                    </div>
-                </section>
-            </article>
+        <div id="tituloVjuegos"><h2>Videojuegos</h2></div>
+        <article class="containerVj">
+            <section>
+                <div class="videojuegos">
+                    <img src="./images/garrys.jpg" id="fotosJuegos">
+                    <h3 id="tituloVjuego">Garry's Mod</h3>
+                    <p id="textoVjuegos">Garry's Mod es un entorno que te permite jugar libremente con el motor físico. AL contrario de la mayoria de juegos, no hay metas u objetivos predeterminados</p>
+                    <button class="masInfo">más info</button>
+                </div>
+            </section>
+            <section>
+                <div class="videojuegos">
+                    <img src="./images/isaac.jpg" id="fotosJuegos">
+                    <h3 id="tituloVjuego">The Binding Of Isaac</h3>
+                    <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                    <button class="masInfo">más info</button>
+                </div>
+            </section>
+            <section>
+                <div class="videojuegos">
+                    <img src="./images/granturismo5.jpg" id="fotosJuegos">
+                    <h3 id="tituloVjuego">Gran Turismo 5</h3>
+                    <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                    <button class="masInfo">más info</button>
+                </div>
+            </section>
+            <section>
+                <div class="videojuegos">
+                    <img src="./images/guitarhero.jpg" id="fotosJuegos">
+                    <h3 id="tituloVjuego">Guitar hero</h3>
+                    <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                    <button class="masInfo">más info</button>
+                </div>
+            </section>
+            <section>
+                <div class="videojuegos">
+                    <img src="./images/assassinscreed.jpg" id="fotosJuegos">
+                    <h3 id="tituloVjuego">Assassins Creed: Origins</h3>
+                    <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                    <button class="masInfo">más info</button>
+                </div>
+            </section>
+            <section>
+                <div class="videojuegos">
+                    <img src="./images/hollowknight.jpg" id="fotosJuegos">
+                    <h3 id="tituloVjuego">Hollow Knight</h3>
+                    <p id="textoVjuegos">Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Issac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanos perdidos, sus miedos y, finalmente, a su madre. The Binding of Isaac es un shooter de rol y acción generado</p>
+                    <button class="masInfo">más info</button>
+                </div>
+            </section>
+        </article>
         <footer>
-            <div id="footerLinks"><h5>FACEBOOK</h5></div>
-            <div id="footerLinks"></div><h5>TWITTER</h5></div>
-            <div id="footerLinks"></div><h5>INSTAGRAM</h5></div>
-            <div id="footerLinks"></div><h5>RSS</h5></div>
-            <div id="copyright"><h5>Copyright © 2022-2023</h5></div>
-        </footer>
+            <div id="footer-left">
+                <h5>FACEBOOK</h5>
+                <h5>TWITTER</h5>
+                <h5>INSTAGRAM</h5>
+                <h5 id="lastmargin">RSS</h5>
+            </div>
+            <div id="footer-center"><h5>Copyright © 2022-2023</h5></div>
+            <div id="footer-right"><h5>Carrer d'Aiguablava<br>08033 Barcelona</h5></div>
+        </footer>              
     </body>
 </html>
