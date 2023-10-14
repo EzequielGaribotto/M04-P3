@@ -1,14 +1,12 @@
 header {
-    width: 100%;
-    height: 20%
+    height: 20%;
 }
 .header {
-    position: fixed;
+    position:fixed;
     width: 100%;
-    height: 100%;
 }
 body {
-    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
+    font-family: 'Kanit', sans-serif;
     width: 100%;
     height: 100%;
     margin: 0%;
@@ -20,13 +18,16 @@ body {
     height:150px
 }
 #logo {
+    position:relative;
     display:flex;
     margin-left:auto;
     margin-right:auto;
     height: 200px;
     width: 200px;
 }
+
 #menu {
+    position:relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,13 +35,25 @@ body {
     height:60px;
     width:100%;
 }
+#menu.sticky {
+    position: fixed;
+}
+#menutext.sticky {
+    position: fixed;
+}
 #menutext {
+    position:sticky;
     display: flex;
     flex-direction: row;
     padding-left: 0.75%;
     padding-right: 0.75%;
     cursor: pointer;
 }
+
+#menutext h3:hover {
+    color:#0A91AB
+}
+
 #linea {
     display: flex;
     background-color: black;
@@ -56,14 +69,9 @@ body {
 .containerVj {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin:0%
-}
-#tituloVJuego {
-    color: #FFC045;
-    text-align: left;
-    margin-left:2.5%;
-    margin-right:2,5%;
+    justify-content:space-evenly;
+    margin-left:1.5%;
+    margin-right:1.5%;
 }
 .videojuegos {
     display:inline-block;
@@ -71,43 +79,94 @@ body {
     border-style: dashed;
     border-radius: 5px;
     border-color: #FFC045;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 15px;
-    width: 480px;
     border-width: 3;
+    flex-direction: row;
+    width: 550px;
+    height: 480px;
+    margin-left:0%;
+    margin-right:0%;
+    margin-bottom: 5%;
 }
-#textoVJuegos {
-    margin-left:2.5%;
-    margin-right:2,5%;
+
+.videojuegos:hover {
+    text-align: left;
+    border-style: outset;
+    border-radius: 35px;
+    border-color: #ffe873;
+    border-width: 10;
 }
 #fotosJuegos {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    height: 300;
-    width: 480;
+    height: 300px;
+    width: 550px;
     justify-content: center;
 }
+#tituloVJuego {
+    color: #FFC045;
+    text-align: left;
+    margin-left:3%;
+}
+#textoVJuegos {
+    text-align:left;
+    margin-left:2.5%;
+    margin-right:2,5%;
+}
+
 .masInfo {
-    display:flex;
-    justify-content: flex-end;
-    cursor:pointer;
+    text-align: center;
     background-color: #FFC045;
-    border-color: #FFC045;
     border-style: groove;
+    border-width: 0;
     border-radius: 5px;
-    margin: 1%;
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+    margin-left:85.5%;
+    bottom:0;
+    cursor:pointer;
+}
+
+.masInfo:hover {
+    background-color: #f8c662;
+    border-color: black;
+    border-width: 1px;
+    font-weight: bold;
+}
+.trucosContainer {
+    display: block;
+    color: black;
+    background-color: #e4f6f9;
+    border-style: dotted;
+    border-radius: 15px;
+    border-width: 5px;
+    width: 430px;
+    height: 1080px;
+    margin: 1.5%;
+    font-weight: bold;
+    text-align: center;
+}
+.trucosTitle {
+    text-align: center;
+    margin:0%;
+    color: #0A91AB;
+}
+#juegoTruco {
+    font-weight: bold;
+    color:#FFC045;
+}
+#grayLine {
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin:0%;
+    height:1px;
+    width:95%;
+}
+.trucos {
+    color:black
 }
 footer {
     display: flex;
     height: 100px;
     width: 100%;
     background-color: #8A8070;
-    cursor: pointer;
 }
 
 #footer-left,
@@ -115,11 +174,9 @@ footer {
 #footer-right {
     display: flex;
     width:100%;
-    cursor: pointer;
 }
 
 #footer-left {
-    cursor: pointer;
     justify-content: flex-start;
     margin-left:1%;
     flex:1;
@@ -127,6 +184,7 @@ footer {
 
 #footer-left h5 {
     margin-right: 25px;
+    cursor: pointer;
 }
 #lastmargin {
     margin-right: 0
@@ -142,4 +200,7 @@ footer {
     margin-right:1%;
     text-align: right;
     flex:5;
+}
+#footer-right h5 {
+    cursor: pointer;
 }
