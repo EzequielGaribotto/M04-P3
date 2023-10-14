@@ -35,12 +35,6 @@ body {
     height:60px;
     width:100%;
 }
-#menu.sticky {
-    position: fixed;
-}
-#menutext.sticky {
-    position: fixed;
-}
 #menutext {
     position:sticky;
     display: flex;
@@ -77,7 +71,7 @@ body {
     display:inline-block;
     text-align: left;
     border-style: dashed;
-    border-radius: 5px;
+    border-radius: 8.0px;
     border-color: #FFC045;
     border-width: 3;
     flex-direction: row;
@@ -91,9 +85,9 @@ body {
 .videojuegos:hover {
     text-align: left;
     border-style: outset;
-    border-radius: 35px;
+    border-radius: 8.0px;
     border-color: #ffe873;
-    border-width: 10;
+    border-width: 3;
 }
 #fotosJuegos {
     border-top-left-radius: 5px;
@@ -120,7 +114,7 @@ body {
     border-width: 0;
     border-radius: 5px;
     margin-left:85.5%;
-    bottom:0;
+    margin-bottom: 5%;
     cursor:pointer;
 }
 
@@ -130,7 +124,100 @@ body {
     border-width: 1px;
     font-weight: bold;
 }
+
+.asidePlusNewsContainer {
+    align-items: flex-start;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+}
+#newsTitle h2 {
+    flex:2;
+    color: #0A91AB;
+    font-weight: bold;
+    text-align: center;
+}
+
+.newsContainer {
+    flex: 2;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: stretch;
+}
+
+.news {
+    text-align: left;
+    border-style:groove;
+    border-radius: 8.0px;
+    border-color:#0A91AB;
+    border-width: 3;
+    flex-direction: row;
+    width: 500px;
+    height: 480px;
+    margin-left:0%;
+    margin-right:0%;
+    margin-bottom: 5%;
+    flex-wrap: nowrap;
+}
+
+#fecha {
+    color:black;
+    text-align: left;
+    font-weight: bold;
+    margin:0.5%;
+}
+
+#orangeLine {
+    background-color: #FFC045;
+    height: 5px;
+    width: 100%;
+}
+
+#newsTitle {
+    color: #FFC045;
+    text-align: center;
+    margin-top:1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0%;
+}
+
+#textoNews {
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    margin:1%;
+    margin-bottom:3%;
+}
+.imagePlusButton {
+}
+#fotosNews {
+    width:500px;
+}
+
+.leerMas {
+    text-align: center;
+    background-color: #FFC045;
+    border-style: groove;
+    border-width: 0;
+    border-radius: 5px;
+    margin-bottom: 55%;
+    margin-left:85.5%;
+    bottom:0;
+    cursor:pointer;
+}
+
+.leerMas:hover {
+    background-color: #f8c662;
+    border-color: black;
+    border-width: 1px;
+    font-weight: bold;
+}
+
 .trucosContainer {
+    flex:1;
+    align-self: stretch;
     display: block;
     color: black;
     background-color: #e4f6f9;
@@ -143,6 +230,7 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
 .trucosTitle {
     text-align: center;
     margin:0%;
@@ -180,6 +268,7 @@ footer {
     justify-content: flex-start;
     margin-left:1%;
     flex:1;
+    padding-bottom: 5%;
 }
 
 #footer-left h5 {
@@ -200,6 +289,7 @@ footer {
     margin-right:1%;
     text-align: right;
     flex:5;
+    padding-bottom: 5%;
 }
 #footer-right h5 {
     cursor: pointer;
