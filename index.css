@@ -1,30 +1,44 @@
+/* CABECERA FIJA */
+
 header {
     height: 20%;
 }
 .header {
-    position:fixed;
+    position: fixed;
     width: 100%;
 }
+
+/* BODY */
+
 body {
     font-family: 'Kanit', sans-serif;
-    width: 100%;
-    height: 100%;
     margin: 0%;
 }
+
+/* BANNER AZUL */
+
 #banner {
     display: flex;
     background-color: #0A91AB;
     margin:0%;
     height:150px
 }
+
+/* SUS LOGO */
+
 #logo {
     position:relative;
     display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    height: 200px;
-    width: 200px;
+    justify-content: center;
+    flex:2;
+    margin-top: 0%;
 }
+
+#mogus:hover {
+    margin-top:1%
+}
+
+/* NAVIGATIONAL MENU ORANGE*/
 
 #menu {
     position:relative;
@@ -54,12 +68,18 @@ body {
     height: 2px;
     width: 100%;
 }
+
+/* TITULO VJUEGOS */
+
 #tituloVjuegos {
     display: flex;
     color: #0A91AB;
     padding-left: 1%;
     padding-top: 1%
 }
+
+/* VIDEOJUEGOS */
+
 .containerVj {
     display: flex;
     flex-wrap: wrap;
@@ -119,50 +139,54 @@ body {
 }
 
 .masInfo:hover {
-    background-color: #f8c662;
+    background-color: #8A8070;
     border-color: black;
+    color: #FFC045;
     border-width: 1px;
     font-weight: bold;
 }
 
+/* NEWS + ASIDE CONTAINER */
+
 .asidePlusNewsContainer {
-    align-items: flex-start;
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content:flex-start;
-}
-#newsTitle h2 {
-    flex:2;
-    color: #0A91AB;
-    font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:0.25%;
+    margin-right:0.25%;
 }
 
+/* NEWS MAIN */
+
 .newsContainer {
-    flex: 2;
+    margin-left:2%;
     display:flex;
-    flex-wrap: wrap;
     justify-content:space-around;
-    align-content: stretch;
+    flex-wrap:wrap;
+}
+
+
+#newsTitle {
+    display: flex;
+    text-align: center;
+}
+#newsTitle h2 {
+    color: #0A91AB;
+    font-weight: bold;
 }
 
 .news {
-    text-align: left;
     border-style:groove;
     border-radius: 8.0px;
     border-color:#0A91AB;
     border-width: 3;
-    flex-direction: row;
-    width: 500px;
-    height: 480px;
+    width: 570px;
+    height: auto;
     margin-left:0%;
     margin-right:0%;
     margin-bottom: 5%;
-    flex-wrap: nowrap;
 }
 
 #fecha {
-    color:black;
     text-align: left;
     font-weight: bold;
     margin:0.5%;
@@ -184,16 +208,22 @@ body {
 }
 
 #textoNews {
-    color:black;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     margin:1%;
     margin-bottom:3%;
 }
+
 .imagePlusButton {
+    margin:0%;
+    padding:0%;
 }
+
 #fotosNews {
-    width:500px;
+    margin:0%;
+    width:570px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .leerMas {
@@ -202,54 +232,69 @@ body {
     border-style: groove;
     border-width: 0;
     border-radius: 5px;
-    margin-bottom: 55%;
-    margin-left:85.5%;
-    bottom:0;
+    padding:1.0%;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+    margin-top:0%;
+    margin-left: 85%;
     cursor:pointer;
 }
 
+
 .leerMas:hover {
-    background-color: #f8c662;
+    background-color: #8A8070;
     border-color: black;
+    color: #FFC045;
     border-width: 1px;
     font-weight: bold;
 }
 
+
+/* ASIDE TRUCOS */
+
 .trucosContainer {
-    flex:1;
-    align-self: stretch;
-    display: block;
-    color: black;
+    float:left;
+    display:block;
     background-color: #e4f6f9;
     border-style: dotted;
     border-radius: 15px;
     border-width: 5px;
     width: 430px;
     height: 1080px;
-    margin: 1.5%;
+    margin:0%;
+    margin-left:1.5%;
     font-weight: bold;
     text-align: center;
 }
 
 .trucosTitle {
-    text-align: center;
     margin:0%;
+    text-align: center;
     color: #0A91AB;
 }
 #juegoTruco {
+    margin:0%;
     font-weight: bold;
     color:#FFC045;
 }
 #grayLine {
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
     margin:0%;
+    display: flex;
+    flex: 2;
+    background-color: rgb(239, 235, 235);
     height:1px;
     width:95%;
 }
 .trucos {
     color:black
 }
+
+
+
+
+/* FOOTER */
+
+
 footer {
     display: flex;
     height: 100px;
