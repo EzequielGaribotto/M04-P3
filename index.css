@@ -1,13 +1,5 @@
 /* CABECERA FIJA */
 
-header {
-    height: 20%;
-}
-.header {
-    position: fixed;
-    width: 100%;
-}
-
 /* BODY */
 
 body {
@@ -18,36 +10,37 @@ body {
 /* BANNER AZUL */
 
 #banner {
+    width:100%;
     display: flex;
     background-color: #0A91AB;
     margin:0%;
-    height:150px
+    padding-bottom:1%;
 }
 
 /* SUS LOGO */
 
 #logo {
-    position:relative;
-    display:flex;
-    justify-content: center;
-    flex:2;
+    display: block;
+    padding-bottom: 1%;
     margin-top: 0%;
-}
-
-#mogus:hover {
-    margin-top:1%
+    margin:auto;
 }
 
 /* NAVIGATIONAL MENU ORANGE*/
 
 #menu {
-    position:relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     background-color: #FFC045;
-    height:60px;
+    transition: all 0.5s ease-in-out;
+    position: sticky;
+    top:0;
+    height:7.0%;
     width:100%;
+}
+
+#menu:hover {
+    transform: scale(1.1);
 }
 #menutext {
     position:sticky;
@@ -63,10 +56,10 @@ body {
 }
 
 #linea {
-    display: flex;
     background-color: black;
     height: 2px;
     width: 100%;
+    margin: 0%;
 }
 
 /* TITULO VJUEGOS */
@@ -96,10 +89,10 @@ body {
     border-width: 3;
     flex-direction: row;
     width: 550px;
-    height: 480px;
+    height: auto;
     margin-left:0%;
     margin-right:0%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 }
 
 .videojuegos:hover {
@@ -121,6 +114,7 @@ body {
     text-align: left;
     margin-left:3%;
 }
+
 #textoVJuegos {
     text-align:left;
     margin-left:2.5%;
@@ -128,13 +122,18 @@ body {
 }
 
 .masInfo {
+    display: inline-block;
     text-align: center;
     background-color: #FFC045;
     border-style: groove;
     border-width: 0;
     border-radius: 5px;
-    margin-left:85.5%;
-    margin-bottom: 5%;
+    padding:1.0%;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+    margin-top: 0%;
+    margin-left: 82.5%;
+    margin-right: 2.5%;
     cursor:pointer;
 }
 
@@ -149,29 +148,27 @@ body {
 /* NEWS + ASIDE CONTAINER */
 
 .asidePlusNewsContainer {
-    display: flex;
-    justify-content: space-evenly;
     margin-left:0.25%;
     margin-right:0.25%;
 }
 
 /* NEWS MAIN */
 
+.newsTitleContainer {
+    width:100%;
+}
+
 .newsContainer {
     margin-left:2%;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     flex-wrap:wrap;
 }
 
-
-#newsTitle {
-    display: flex;
-    text-align: center;
-}
-#newsTitle h2 {
+.newsTitleContainer h2 {
     color: #0A91AB;
     font-weight: bold;
+    text-align: center;
 }
 
 .news {
@@ -180,7 +177,7 @@ body {
     border-color:#0A91AB;
     border-width: 3;
     width: 570px;
-    height: auto;
+    height: 480px;
     margin-left:0%;
     margin-right:0%;
     margin-bottom: 5%;
@@ -193,9 +190,10 @@ body {
 }
 
 #orangeLine {
+    border:none;
     background-color: #FFC045;
     height: 5px;
-    width: 100%;
+    width:95%;
 }
 
 #newsTitle {
@@ -220,6 +218,7 @@ body {
 }
 
 #fotosNews {
+    position:absolute;
     margin:0%;
     width:570px;
     border-bottom-left-radius: 10px;
@@ -227,6 +226,7 @@ body {
 }
 
 .leerMas {
+    position:relative;
     text-align: center;
     background-color: #FFC045;
     border-style: groove;
@@ -235,8 +235,12 @@ body {
     padding:1.0%;
     padding-top:1.5%;
     padding-bottom:1.5%;
-    margin-top:0%;
+    margin-top: 2.5%;
+    margin-bottom: 2,5%;
     margin-left: 85%;
+    margin-right: 2.5%;
+
+
     cursor:pointer;
 }
 
@@ -288,9 +292,6 @@ body {
 .trucos {
     color:black
 }
-
-
-
 
 /* FOOTER */
 
