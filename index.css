@@ -1,8 +1,7 @@
-/* CABECERA FIJA */
-
 /* BODY */
 
 body {
+    width: 100%;
     font-family: 'Kanit', sans-serif;
     margin: 0%;
 }
@@ -10,56 +9,47 @@ body {
 /* BANNER AZUL */
 
 #banner {
-    width:100%;
-    display: flex;
     background-color: #0A91AB;
-    margin:0%;
-    padding-bottom:1%;
 }
 
 /* SUS LOGO */
 
 #logo {
     display: block;
-    padding-bottom: 1%;
-    margin-top: 0%;
-    margin:auto;
+    margin: auto;
 }
 
 /* NAVIGATIONAL MENU ORANGE*/
 
 #menu {
+    position: sticky;
     display: flex;
     justify-content: center;
     background-color: #FFC045;
-    transition: all 0.5s ease-in-out;
-    position: sticky;
     top:0;
     height:7.0%;
     width:100%;
 }
 
-#menu:hover {
-    transform: scale(1.1);
-}
 #menutext {
-    position:sticky;
     display: flex;
     flex-direction: row;
     padding-left: 0.75%;
     padding-right: 0.75%;
-    cursor: pointer;
 }
 
 #menutext h3:hover {
-    color:#0A91AB
+    color:#0A91AB;
+    cursor: pointer;
 }
 
 #linea {
+    position:sticky;
+    top:7%;
     background-color: black;
-    height: 2px;
-    width: 100%;
+    height: 3px;
     margin: 0%;
+    border-width: 0px;
 }
 
 /* TITULO VJUEGOS */
@@ -89,7 +79,7 @@ body {
     border-width: 3;
     flex-direction: row;
     width: 550px;
-    height: auto;
+    height: 480px;
     margin-left:0%;
     margin-right:0%;
     margin-bottom: 2.5%;
@@ -145,11 +135,41 @@ body {
     font-weight: bold;
 }
 
-/* NEWS + ASIDE CONTAINER */
+/* ASIDE TRUCOS */
 
-.asidePlusNewsContainer {
-    margin-left:0.25%;
-    margin-right:0.25%;
+.trucosContainer {
+    float:left;
+    display:block;
+    background-color: #e4f6f9;
+    border-style: dotted;
+    border-radius: 15px;
+    border-width: 5px;
+    width: 430px;
+    height: 1080px;
+    margin:0%;
+    margin-left:1.5%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.trucosTitle {
+    margin:0%;
+    text-align: center;
+    color: #0A91AB;
+}
+#juegoTruco {
+    margin:0%;
+    font-weight: bold;
+    color:#FFC045;
+}
+#grayLine {
+    background-color: rgb(239, 235, 235);
+    height:3px;
+    width:95%;
+    border:none;
+}
+.trucos {
+    color:black
 }
 
 /* NEWS MAIN */
@@ -173,7 +193,7 @@ body {
 
 .news {
     border-style:groove;
-    border-radius: 8.0px;
+    border-radius: 10px;
     border-color:#0A91AB;
     border-width: 3;
     width: 570px;
@@ -212,35 +232,25 @@ body {
     margin-bottom:3%;
 }
 
-.imagePlusButton {
-    margin:0%;
-    padding:0%;
-}
-
-#fotosNews {
+.fotosNews {
     position:absolute;
-    margin:0%;
-    width:570px;
+    height: auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .leerMas {
     position:relative;
+    display:inline-block;
     text-align: center;
     background-color: #FFC045;
     border-style: groove;
     border-width: 0;
     border-radius: 5px;
+    margin-left:85%;
     padding:1.0%;
     padding-top:1.5%;
     padding-bottom:1.5%;
-    margin-top: 2.5%;
-    margin-bottom: 2,5%;
-    margin-left: 85%;
-    margin-right: 2.5%;
-
-
     cursor:pointer;
 }
 
@@ -253,53 +263,44 @@ body {
     font-weight: bold;
 }
 
+/* RANKING */
 
-/* ASIDE TRUCOS */
-
-.trucosContainer {
-    float:left;
-    display:block;
-    background-color: #e4f6f9;
-    border-style: dotted;
-    border-radius: 15px;
-    border-width: 5px;
-    width: 430px;
-    height: 1080px;
-    margin:0%;
-    margin-left:1.5%;
-    font-weight: bold;
-    text-align: center;
-}
-
-.trucosTitle {
-    margin:0%;
-    text-align: center;
-    color: #0A91AB;
-}
-#juegoTruco {
-    margin:0%;
-    font-weight: bold;
-    color:#FFC045;
-}
-#grayLine {
-    margin:0%;
+.ranking {
+    width:100%;
     display: flex;
-    flex: 2;
-    background-color: rgb(239, 235, 235);
-    height:1px;
-    width:95%;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
-.trucos {
-    color:black
+
+#persona {
+    text-align: center;
+}
+
+.ranking img {
+    border-radius:100px;
+    width:100px;
+    height:100px;
+    margin-bottom:-5%;
+}
+
+.ranking h4 { /* nombre */
+    color:#FFC045;
+    font-weight: bold;
+}
+
+.ranking h5 { /* puntuacion */
+    color:black;
+    font-weight: bold;
+    margin-top:-15%;
 }
 
 /* FOOTER */
 
 
 footer {
+    width: 100%;
     display: flex;
     height: 100px;
-    width: 100%;
     background-color: #8A8070;
 }
 
@@ -307,7 +308,6 @@ footer {
 #footer-center,
 #footer-right {
     display: flex;
-    width:100%;
 }
 
 #footer-left {
@@ -322,13 +322,15 @@ footer {
     cursor: pointer;
 }
 #lastmargin {
-    margin-right: 0
+    margin-right: 0px;
 }
 #footer-center {
+    margin-left:-25px;
+    width:100%;
     justify-content:flex-end;
-    margin:0%;
     align-self:flex-end;
     flex:4;
+    margin-bottom:0%
 }
 #footer-right {
     justify-content: flex-end;
