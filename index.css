@@ -60,8 +60,7 @@ nav div h3:hover {
 #tituloVjuegos {
     display: flex;
     color: #0A91AB;
-    padding-left: 1%;
-    padding-top: 1%
+    margin-left: 1%;
 }
 
 /* VIDEOJUEGOS */

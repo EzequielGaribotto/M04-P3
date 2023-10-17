@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Contacto</title>
+        <link rel="icon" type="image/x-icon" href="./images/amongus.png">
+        <meta charset="UTF-8">
+        <meta name="author" content="Ezequiel Garibotto">
+        <meta name="description" content="Contacto">
+        <meta name="keywords" content="Intro HTML">
+        <link rel="stylesheet" href="contacto.css">
+    </head>
+    <body>
+        <header>
+            <div id="banner">
+                <img id= "logo" src="./images/amongus.png" alt="mogus" id="mogus" width="200" height="200">
+            </div>
+        </header>
+        <nav>
+            <div><a target="_blank" href="./index.html"><h3>MAIN</h3></a></div>
+            <div><a target="_blank" href="./contacto.html"><h3>LISTADO</h3></a></div>
+            <div><a target="_blank" href="./contacto.html"><h3>DETALLES</h3></a></div>
+            <div><a target="_blank" href="./contacto.html"><h3>CONTACTO</h3></a></div>
+        </nav>
+        <hr id="linea"></hr>
+        <form action="formtest.php" method="post" enctype="multipart/form-data">
+            <fieldset id="contactanos">
+                <legend><strong>Contáctanos</strong></legend>
+                <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" name="your-recipient">
+                    <option value="">Tópico*</option>
+                    <option value="Soporte técnico">Soporte técnico</option>
+                    <option value="Soporte técnico">Reportes</option>
+                    <option value="Soporte técnico">Soporte técnico</option>
+                    <option value="Soporte técnico">Soporte técnico</option>
+                </select>
+                <datalist id="topicoslist">
+                    <option label="Soporte técnico" value="Soporte técnico">
+                    <option label="Sugerencias" value="Sugerencias">
+                    <option label="Reportes" value="Reportes">
+                    <option label="Donaciones" value="Donaciones">
+                </datalist><br>
+                <textarea rows="12" cols="120" aria-required="true" placeholder="Tu comentario"></textarea><br>
+                <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nombre*" value="" type="text" name="your-name"><br>
+                <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Correo electrónico*" value="" type="text" name="your-name"><br>
+                <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="false" aria-invalid="false" placeholder="Numero de teléfono" value="" type="text" name="your-name"><br>
+                <div id="Enviar">
+                    <p>Enviar</p>
+                </div>
+            </fieldset>
+            <fieldset id="Encuentranos">
+                <legend><strong>Encuéntranos</strong></legend>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.3525356731147!2d2.183943876619199!3d41.453268591905285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697559625096!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <div class="contactMethod">
+                    <img src="./images/map.png" width="50" height="60">
+                    <p>Carrer d'Aiguablava, 121<br>
+                        Barcelona 08033</p>
+                </div>
+                <div class="contactMethod">
+                    <img src="./images/phone.png" width="50" height="60">
+                    <p>+34 672 30 41 63</p>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+
+    </html>
