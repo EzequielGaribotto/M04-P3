@@ -67,6 +67,7 @@ nav div h3:hover {
 /* MAIN */
 
 #containerAll {
+
     margin-left:2.5%;
     margin-right:2.5%;
     margin-bottom:7.5%;
@@ -105,9 +106,8 @@ fieldset {
 
 #informacionJuego {
     display: flex;
-    justify-content: space-evenly;
-    height:900px;
-    flex-direction: row;
+    justify-content: space-around;
+    height:auto;
     flex-wrap: wrap;
     text-align: center;
     margin-right: 2.5%;
@@ -115,9 +115,8 @@ fieldset {
 
 #parInfo {
     padding:1%;
-    border-width:0px;
     height:auto;
-    width:150px;
+    width:20%;
 }
 
 
@@ -129,6 +128,7 @@ fieldset {
 /* ASIDE RIGHT (PORTADA) */
 
 #portada {
+
     margin-left: 2.5%;
     display: flex;
     float:right;
