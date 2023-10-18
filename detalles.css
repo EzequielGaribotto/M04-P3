@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39');
+
+/* BODY */
+body {
+    width: 100%;
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
+    margin: 0%;
+}
+
+/* BANNER AZUL */
+
+#banner {
+    background-color: #0A91AB;
+}
+
+/* SUS LOGO */
+
+#logo {
+    display: block;
+    margin: auto;
+}
+
+/* NAVIGATIONAL MENU Naranja*/
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: #FFC045;
+    top:0;
+    height:7.0%;
+    width:100%;
+}
+
+nav div h3 {
+    color:black;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.75%;
+    padding-right: 0.75%;
+}
+
+nav div h3:hover {
+    color:#0A91AB;
+    cursor: pointer;
+}
+
+#linea {
+    position:sticky;
+    top:7%;
+    background-color: black;
+    height: 3px;
+    margin: 0%;
+    border-width: 0px;
+}

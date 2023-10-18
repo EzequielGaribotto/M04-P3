@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39');
+
 /* BODY */
 body {
     width: 100%;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
     margin: 0%;
 }
 
@@ -72,28 +75,24 @@ nav div h3:hover {
     margin-left:1.5%;
     margin-right:1.5%;
 }
+
 .videojuegos {
-    display:inline-block;
     text-align: left;
     border-style: dashed;
     border-radius: 8.0px;
     border-color: #FFC045;
     border-width: 3;
-    flex-direction: row;
     width: 550px;
-    height: 510px;
-    margin-left:0%;
-    margin-right:0%;
+    height: 550px;
     margin-bottom: 2.5%;
 }
 
 .videojuegos:hover {
-    text-align: left;
-    border-style: outset;
     border-radius: 8.0px;
     border-color: #ffe873;
     border-width: 3;
 }
+
 #fotosJuegos {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -101,6 +100,7 @@ nav div h3:hover {
     width: 550px;
     justify-content: center;
 }
+
 #tituloVJuego {
     color: #FFC045;
     text-align: left;
@@ -114,19 +114,17 @@ nav div h3:hover {
 }
 
 .masInfo {
-    display: inline-block;
-    text-align: center;
     background-color: #FFC045;
     border-style: groove;
-    border-width: 0;
     border-radius: 5px;
+    text-align: center;
+    border-width: 0px;
     padding:1.0%;
     padding-top:1.5%;
     padding-bottom:1.5%;
-    margin-top: 0%;
-    margin-left: 82.5%;
-    margin-right: 2.5%;
     cursor:pointer;
+    margin-left:82.5%;
+    margin-right:2,5%;
 }
 
 .masInfo:hover {
@@ -202,7 +200,7 @@ nav div h3:hover {
     border-color:#0A91AB;
     border-width: 3;
     width: 570px;
-    height: 480px;
+    height: 570px;
     margin-left:0%;
     margin-right:0%;
     margin-bottom: 5%;
@@ -237,10 +235,11 @@ nav div h3:hover {
 }
 
 .fotosnoticias {
-    position: absolute;
     height: auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .leerMas {
