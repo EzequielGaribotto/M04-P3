@@ -144,3 +144,57 @@ fieldset {
     justify-content: center;
 }
 
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: #8A8070;
+}
+
+#footer-left,
+#footer-center,
+#footer-right {
+    display: flex;
+}
+
+#footer-left {
+    margin-left:1%;
+    flex:1;
+    padding-bottom: 5%;
+}
+
+#footer-left h5 {
+    margin-right: 25px;
+    cursor: pointer;
+}
+#lastmargin {
+    margin-right: 0px;
+}
+#footer-center {
+    margin-left:-25px;
+    width:100%;
+    justify-content:flex-end;
+    align-self:flex-end;
+    flex:4;
+    margin-bottom:0%
+}
+#footer-right {
+    justify-content: flex-end;
+    margin-right:1%;
+    text-align: right;
+    flex:5;
+    padding-bottom: 5%;
+}
+#footer-right h5 {
+    cursor: pointer;
+}
