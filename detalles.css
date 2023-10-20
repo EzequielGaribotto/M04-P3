@@ -23,6 +23,7 @@ body {
 /* NAVIGATIONAL MENU Naranja*/
 
 nav {
+    border-bottom: 3px solid black;
     position: sticky;
     display: flex;
     justify-content: center;
@@ -49,14 +50,6 @@ nav div h3:hover {
     cursor: pointer;
 }
 
-#linea {
-    position:sticky;
-    top:7%;
-    background-color: black;
-    height: 3px;
-    margin: 0%;
-    border-width: 0px;
-}
 
 
 
@@ -67,7 +60,7 @@ nav div h3:hover {
 /* MAIN */
 
 main {
-    margin:2.5%;
+    margin:5%;
     margin-top:0%;
     height:100%;
     justify-content: space-between;
@@ -90,11 +83,6 @@ fieldset {
 }
 
 
-#containerAll {
-    height:100%;
-    width:100%;
-}
-
 
 
 
@@ -103,14 +91,11 @@ fieldset {
 /* INFORMACION */
 
 
-#containerInfoTrailer {
-    float:left;
-    width:60%;
-}
+
 
 
 #informacion {
-    width:100%;
+    width:60%;
 }
 
 
@@ -133,7 +118,8 @@ fieldset {
 
 
 #trailer {
-    width:100%;
+    float:left;
+    width:60%;
     text-align:center;
     height:fit-content;
 }

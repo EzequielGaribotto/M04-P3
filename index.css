@@ -24,6 +24,7 @@ body {
 /* NAVIGATIONAL MENU Naranja*/
 
 nav {
+    border-bottom:3px solid black;
     z-index: 100;
     position: sticky;
     display: flex;
@@ -51,15 +52,6 @@ nav div h3:hover {
     cursor: pointer;
 }
 
-#linea {
-    z-index: 100;
-    position:sticky;
-    top:6.6%;
-    background-color: black;
-    height: 3px;
-    margin: 0%;
-    border-width: 0px;
-}
 
 /* TITULO VJUEGOS */
 
@@ -118,7 +110,11 @@ nav div h3:hover {
 
 }
 
+
+
 .masInfo {
+    text-decoration: none;
+    color:black;
     background-color: #FFC045;
     border-style: groove;
     border-radius: 5px;
@@ -198,7 +194,7 @@ nav div h3:hover {
     border-color:#0A91AB;
     border-width: 3;
     width: 570px;
-    height: 520px;
+    height: 522px;
     margin-left:0%;
     margin-right:0%;
     margin-bottom: 5%;
@@ -243,8 +239,6 @@ nav div h3:hover {
     position:absolute;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    justify-content: flex-end;
-    align-self: flex-end;
 }
 
 .leerMas {

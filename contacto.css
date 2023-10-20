@@ -25,6 +25,7 @@ body {
 /* NAVIGATIONAL MENU Naranja*/
 
 nav {
+    border-bottom: 3px solid black;
     position: sticky;
     display: flex;
     justify-content: center;
@@ -50,16 +51,6 @@ nav div h3:hover {
     color:#0A91AB;
     cursor: pointer;
 }
-
-#linea {
-    position:sticky;
-    top:7%;
-    background-color: black;
-    height: 3px;
-    margin: 0%;
-    border-width: 0px;
-}
-
 
 
 /* MAIN */
