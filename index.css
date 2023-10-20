@@ -86,14 +86,16 @@ nav div h3:hover {
     border-color: #FFC045;
     border-width: 3;
     width: 550px;
-    height: 550px;
+    height: 600px;
     margin-bottom: 2.5%;
 }
 
 .videojuegos:hover {
+    border-style: groove;
     border-radius: 8.0px;
     border-color: #ffe873;
     border-width: 3;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.295);
 }
 
 .fotosJuegos {
@@ -206,6 +208,13 @@ nav div h3:hover {
     margin-left:0%;
     margin-right:0%;
     margin-bottom: 5%;
+}
+
+.noticias:hover {
+    border-style: groove;
+    border-radius: 8.0px;
+    border-width: 3;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.295);
 }
 
 .fecha {
