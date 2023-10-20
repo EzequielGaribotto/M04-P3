@@ -95,16 +95,24 @@ fieldset {
     width:100%;
 }
 
+
+
+
+
+
+/* INFORMACION */
+
+
 #containerInfoTrailer {
     float:left;
     width:60%;
 }
 
-/* INFORMACION */
 
 #informacion {
     width:100%;
 }
+
 
 /* ORDEN DE INFORMACION */ 
 
@@ -121,21 +129,20 @@ fieldset {
     width:20%;
 }
 
+/* TRAILER ASIDE LEFT */
 
-
-
-
-/* ASIDE LEFT */
 
 #trailer {
     width:100%;
     text-align:center;
-    height:fit-content
+    height:fit-content;
 }
+
 
 #iframe {
     width: 1000;
     height: 640;
+    padding: 2.5%
 }
 
 
@@ -159,7 +166,6 @@ fieldset {
 
 #portada_info {
     text-align: center;
-    margin-top:1%;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
@@ -173,32 +179,10 @@ fieldset {
     border-width: 0px;
 }
 
-#distribuidores {
-    align-content: center;
-    display:flex;
-    flex-direction: row;
-}
-
-#distribuidor {
-    flex-direction: column;
-}
-
-#desarrollador {
-    flex-direction: column;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER */
+
 
 footer {
     width: 100%;
@@ -219,7 +203,7 @@ footer {
     padding-bottom: 5%;
 }
 
-#footer-left h5 {
+#footer-left p {
     margin-right: 25px;
     cursor: pointer;
 }
@@ -243,5 +227,4 @@ footer {
 }
 #footer-right h5 {
     cursor: pointer;
-    justify-content: center;
 }

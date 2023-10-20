@@ -54,7 +54,7 @@ nav div h3:hover {
 #linea {
     z-index: 100;
     position:sticky;
-    top:7%;
+    top:6.6%;
     background-color: black;
     height: 3px;
     margin: 0%;
@@ -106,16 +106,16 @@ nav div h3:hover {
     justify-content: center;
 }
 
-.tituloVJuego {
-    color: #FFC045;
+.videojuegos h3 {
+    color:#FFC045;
     text-align: left;
     margin-left:3%;
 }
 
-.textoVJuegos {
+.videojuegos p {
     text-align:left;
     margin-left:2.5%;
-    margin-right:2,5%;
+
 }
 
 .masInfo {
@@ -152,24 +152,20 @@ nav div h3:hover {
     height: 1080px;
     margin:0%;
     margin-left:1.5%;
+    margin-right:0%;
     font-weight: bold;
     text-align: center;
 }
 
-#trucosContainer h2 { /* TRUCOS TITULO */
+#trucosContainer h1 { /* TRUCOS TITULO */
     margin:0%;
-    text-align: center;
     color: #0A91AB;
+    font-size: 35px;
 }
 
 #trucosContainer h3 { /* VIDEOJUEGO */
     margin:0%;
-    font-weight: bold;
     color:#FFC045;
-}
-
-#trucosContainer p { /* TRUCO */
-    color:black
 }
 
 #trucosContainer hr { /* LINEA SEPARADORA GRIS */
@@ -182,19 +178,17 @@ nav div h3:hover {
 /* noticias MAIN */
 
 .tituloCentrado {
+    margin-top:-1.25%;
     width:100%;
-}
-
-.tituloCentrado h2 {
     color: #0A91AB;
     font-weight: bold;
     text-align: center;
 }
 
 #noticiasContainer {
-    margin-left:2%;
+    margin:0%;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     flex-wrap:wrap;
 }
 

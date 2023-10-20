@@ -60,15 +60,16 @@ nav div h3:hover {
     border-width: 0px;
 }
 
-#containerFormMaps {
-    display: flex;
-    flex-direction: row;
+
+
+/* MAIN */
+
+main {
+    margin:9%;
     margin-top:0%;
     margin-bottom:2.5%;
-    justify-content: center;
     font-size: 25px;
     color:#0A91AB;
-    font-weight: bold;
 }
 
 fieldset {
@@ -78,9 +79,13 @@ fieldset {
     background-color: rgb(239, 235, 235);
 }
 
+
+
+/* CONTACTANOS LEFT */
+
 #contactanos {
+    float:left;
     width:800px;
-    margin-right:2.5%
 }
 
 #topico {
@@ -102,7 +107,7 @@ fieldset {
     border-top-left-radius: 0px;
 }
 
-.userData input {
+#userData input {
     padding:0.75%;
     margin:0.25%;
     font-size: 22px;
@@ -133,7 +138,10 @@ fieldset {
 }
 
 #encuentranos {
-    margin-left:2.5%;
+    float:right;
+    width:fit-content;
+    height:fit-content;
+    margin-bottom:5%
 }
 
 .contactMethod {
@@ -174,7 +182,7 @@ footer {
     padding-bottom: 5%;
 }
 
-#footer-left h5 {
+#footer-left p {
     margin-right: 25px;
     cursor: pointer;
 }

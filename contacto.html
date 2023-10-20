@@ -21,11 +21,11 @@
             <div><a target="_blank" href="./contacto.html"><h3>CONTACTO</h3></a></div>
         </nav>
         <hr id="linea"></hr>
-        <div id="containerFormMaps">
+        <main>
             <form method="post" enctype="multipart/form-data">
                 <fieldset id="contactanos">
                     <legend><h2>Contáctanos</h2></legend>
-                    <select id="topico" aria-required="true" name="topico" aria-placeholder="Tópico">
+                    <select id="topico" aria-required="true" name="topico" >
                         <option value="">Tópico*</option>
                         <option value="Soporte técnico">Soporte técnico</option>
                         <option value="Soporte técnico">Reportes</option>
@@ -33,7 +33,7 @@
                         <option value="Soporte técnico">Donaciones</option>
                     </select>
                     <textarea id="comentario" rows="12" cols="120" aria-required="true" placeholder="Tu comentario"></textarea><br>
-                    <div class="userData">
+                    <div id="userData">
                         <input size="40" aria-required="true" placeholder="Nombre*" value="" type="text" name="tu-nombre"><br>
                         <input size="40" aria-required="true" placeholder="Correo electrónico*" value="" type="email" name="tu-correo"><br>
                         <input size="40" aria-required="false" placeholder="Numero de teléfono" value="" type="number" name="tu-numero"><br>
@@ -54,17 +54,16 @@
                     <p>+34 937 070 020</p>
                 </div>
             </fieldset>
-        </div>
+        </main>
         <footer>
             <div id="footer-left">
-                <h5>FACEBOOK</h5>
-                <h5>TWITTER</h5>
-                <h5>INSTAGRAM</h5>
-                <h5 id="lastmargin">RSS</h5>
+                <p>FACEBOOK</p>
+                <p>TWITTER</p>
+                <p>INSTAGRAM</p>
+                <p id="lastmargin">RSS</p>
             </div>
-            <div id="footer-center"><h5>Copyright © 2022-2023</h5></div>
-            <div id="footer-right"><h5>Carrer d'Aiguablava 121<br>08033 Barcelona</h5></div>
+            <div id="footer-center"><p>Copyright © 2022-2023</p></div>
+            <div id="footer-right"><p>Carrer d'Aiguablava 121<br>08033 Barcelona</p></div>
         </footer>
     </body>
-
-    </html>
+</html>

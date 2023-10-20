@@ -24,6 +24,7 @@ body {
 /* NAVIGATIONAL MENU Naranja*/
 
 nav {
+    z-index: 100;
     position: sticky;
     display: flex;
     justify-content: center;
@@ -51,38 +52,168 @@ nav div h3:hover {
 }
 
 #linea {
+    z-index: 101;
     position:sticky;
-    top:7%;
+    top:6.6%;
     background-color: black;
     height: 3px;
     margin: 0%;
     border-width: 0px;
 }
 
-
-
-
-
-
-
 /* MAIN */
 
+body {
+    background-color: #8d8b8820;
+}
+
 main {
-    margin:2.5%;
+    margin:25%;
     margin-top:0%;
-    height:100%;
-    justify-content: space-between;
+    margin-bottom:2.5%;
+}
+
+/* TITULO DE LA PAGINA */
+
+#listado_titulo {
+    text-align: center;
+    color:#0A91AB
+}
+
+.linea_gris {
+    border-width:2px;
+    width:100%;
+    border-color:#FFC045
 }
 
 
 
 
+/* LISTA DE JUEGOS */
 
+article {
+    margin:1%;
+}
 
+.texto_mas_portada_container {
+    display: flex;
+    justify-content: row;
+}
 
+.texto_mas_portada_container img {
+    cursor:pointer;
+}
+
+.texto {
+    text-align:start;
+    margin-right:2.5%;
+}
+
+.titulo_juego {
+    margin-top:0.5%;
+    text-align: left;
+}
+
+.texto div a {
+    text-decoration: none;
+    color:black;
+}
+
+.texto div h2:hover {
+    text-decoration:underline;
+    text-decoration-color: #FFC045;
+    cursor:pointer;
+}
+
+.info_rapida {
+    margin-top:0.5%;
+    display:flex;
+    flex-direction: row;
+    margin-bottom:0.5%;
+}
+
+.plataforma {
+    border-width: 3px;
+    border-style: groove;
+    border-radius: 8px;
+    border-color: #0A91AB;
+    background-color: #FFC045;
+    padding:0.332%;
+    padding-bottom:0%;
+    padding-top:0%;
+    margin-right:0.7%;
+}
+
+.genero {
+    align-self: center;
+    font-size: 22px;
+    color:#8A8070
+}
+
+.portada {
+    align-self: center;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+
+.portada img {
+    transition: all 0.5s ease-in-out;
+    border-radius:8px;
+    width:140px;
+    height:210px;
+}
+
+.portada img:hover {
+    transform: scale(1.2);
+}
+
+/* BOTONES DE PAGINACION */
+
+#paginacion {
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-top:2.5%;
+}
+
+#paginacion a {
+    border-width:1px;
+    border-style:groove;
+    border-color:black;
+    background-color:#ffffff;
+    padding:1.25%;
+    color:#0A91AB;
+    align-self: center;
+}
+
+#paginacion #anterior {
+    color:gray;
+    background-color:#f5f7f9;
+    font-size: 12px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#paginacion #actual {
+    color:beige;
+    background-color: #4c8dc5;
+}
+
+#paginacion #final {
+    font-size: 12px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#paginacion a:hover {
+    background-color:aliceblue;
+    cursor:pointer;
+}
 
 
 /* FOOTER */
+
 
 footer {
     width: 100%;
@@ -103,7 +234,7 @@ footer {
     padding-bottom: 5%;
 }
 
-#footer-left h5 {
+#footer-left p {
     margin-right: 25px;
     cursor: pointer;
 }
@@ -127,5 +258,4 @@ footer {
 }
 #footer-right h5 {
     cursor: pointer;
-    justify-content: center;
 }
