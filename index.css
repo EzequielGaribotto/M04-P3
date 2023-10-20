@@ -24,6 +24,7 @@ body {
 /* NAVIGATIONAL MENU Naranja*/
 
 nav {
+    z-index: 100;
     position: sticky;
     display: flex;
     justify-content: center;
@@ -33,7 +34,8 @@ nav {
     width:100%;
 }
 
-nav div h3 {
+nav a {
+    text-decoration: none;
     color:black;
 }
 
@@ -50,6 +52,7 @@ nav div h3:hover {
 }
 
 #linea {
+    z-index: 100;
     position:sticky;
     top:7%;
     background-color: black;
@@ -68,7 +71,7 @@ nav div h3:hover {
 
 /* VIDEOJUEGOS */
 
-.containerVj {
+#containerVj {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
@@ -93,7 +96,7 @@ nav div h3:hover {
     border-width: 3;
 }
 
-#fotosJuegos {
+.fotosJuegos {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 300px;
@@ -101,13 +104,13 @@ nav div h3:hover {
     justify-content: center;
 }
 
-#tituloVJuego {
+.tituloVJuego {
     color: #FFC045;
     text-align: left;
     margin-left:3%;
 }
 
-#textoVJuegos {
+.textoVJuegos {
     text-align:left;
     margin-left:2.5%;
     margin-right:2,5%;
@@ -137,7 +140,7 @@ nav div h3:hover {
 
 /* ASIDE TRUCOS */
 
-.trucosContainer {
+#trucosContainer {
     float:left;
     background-color: #e4f6f9;
     border-style: dotted;
@@ -151,24 +154,23 @@ nav div h3:hover {
     text-align: center;
 }
 
-.trucosContainer h2 { /* TRUCOS TITULO */
+#trucosContainer h2 { /* TRUCOS TITULO */
     margin:0%;
     text-align: center;
     color: #0A91AB;
-
 }
 
-.trucosContainer h3 { /* VIDEOJUEGO */
+#trucosContainer h3 { /* VIDEOJUEGO */
     margin:0%;
     font-weight: bold;
     color:#FFC045;
 }
 
-.trucosContainer p { /* TRUCO */
+#trucosContainer p { /* TRUCO */
     color:black
 }
 
-.trucosContainer hr { /* LINEA SEPARADORA GRIS */
+#trucosContainer hr { /* LINEA SEPARADORA GRIS */
     background-color: rgb(239, 235, 235);
     height:3px;
     width:95%;
@@ -177,21 +179,21 @@ nav div h3:hover {
 
 /* noticias MAIN */
 
-.noticiasTituloContainer {
+.tituloCentrado {
     width:100%;
 }
 
-.noticiasContainer {
+.tituloCentrado h2 {
+    color: #0A91AB;
+    font-weight: bold;
+    text-align: center;
+}
+
+#noticiasContainer {
     margin-left:2%;
     display:flex;
     justify-content:space-evenly;
     flex-wrap:wrap;
-}
-
-.noticiasTituloContainer h2 {
-    color: #0A91AB;
-    font-weight: bold;
-    text-align: center;
 }
 
 .noticias {
@@ -200,25 +202,25 @@ nav div h3:hover {
     border-color:#0A91AB;
     border-width: 3;
     width: 570px;
-    height: 570px;
+    height: 520px;
     margin-left:0%;
     margin-right:0%;
     margin-bottom: 5%;
 }
 
-#fecha {
+.fecha {
     text-align: left;
     font-weight: bold;
     margin:0.5%;
 }
 
-#naranjaLinea {
+.naranjaLinea {
     background-color: #FFC045;
     height: 5px;
     border-color: #FFC045;
 }
 
-#noticiasTitulo {
+.noticiasTitulo {
     color: #FFC045;
     text-align: center;
     margin-top:1%;
@@ -227,7 +229,7 @@ nav div h3:hover {
     margin-bottom: 0%;
 }
 
-#textonoticias {
+.textonoticias {
     font-weight: bold;
     text-align: left;
     margin:1%;
@@ -235,7 +237,7 @@ nav div h3:hover {
 }
 
 .fotosnoticias {
-    height: auto;
+    position:absolute;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     justify-content: flex-end;
@@ -268,30 +270,30 @@ nav div h3:hover {
 
 /* RANKING */
 
-.ranking {
+#ranking {
     width:100%;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
 }
 
-#persona {
+.persona {
     text-align: center;
 }
 
-.ranking img {
+.persona img {
     border-radius:100px;
     width:100px;
     height:100px;
     margin-bottom:-5%;
 }
 
-.ranking h4 { /* nombre */
+.persona h4 { /* nombre */
     color:#FFC045;
     font-weight: bold;
 }
 
-.ranking h5 { /* puntuacion */
+.persona h5 { /* puntuacion */
     color:black;
     font-weight: bold;
     margin-top:-15%;
@@ -319,7 +321,7 @@ footer {
     padding-bottom: 5%;
 }
 
-#footer-left h5 {
+#footer-left p {
     margin-right: 25px;
     cursor: pointer;
 }
