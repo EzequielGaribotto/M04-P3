@@ -112,24 +112,23 @@ fieldset {
 }
 
 #Enviar {
+    font-weight:normal;
     font-size: 22px;
-    position:relative;
-    border-width:1px;
+    border-width:0px;
     border-style:groove;
     background-color: #FFC045;
-    padding: 0.25%;
     margin-left:90.5%;
     border-radius: 8px;
     border-color: #FFC045;
     text-align: center;
-}
-
-#Enviar p {
     color:black
 }
 
-#Enviar:hover{
+#Enviar:hover {
+    background-color: #8A8070;
     border-color: black;
+    font-weight: bold;
+    color:#FFC045;
     cursor:pointer
 }
 
