@@ -4,24 +4,24 @@
         <title>Contacto</title>
         <link rel="icon" type="image/x-icon" href="./images/amongus.png">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Ezequiel Garibotto">
-        <meta name="description" content="Contacto">
-        <meta name="keywords" content="Intro HTML">
-        <link rel="stylesheet" href="contacto.css">
+        <meta name="description" content="Practica 3">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body id="contacto_body">
         <header>
             <div id="banner">
-                <img id= "logo" src="./images/amongus.png" alt="mogus" id="mogus" width="200" height="200">
+                <img id= "logo" src="./images/amongus.png" alt="mogus" width="200" height="200">
             </div>
         </header>
         <nav>
-            <div><a target="_blank" href="./index.html"><h3>MAIN</h3></a></div>
+            <div><a target="_blank" href="./pagina_principal.html"><h3>PÁGINA PRINCIPAL</h3></a></div>
             <div><a target="_blank" href="./listado.html"><h3>LISTADO</h3></a></div>
-            <div><a target="_blank" href="./detalles.html"><h3>DETALLES</h3></a></div>
+            <div><a target="_blank" href="./detalles.html"><h3>DETALLE</h3></a></div>
             <div><a target="_blank" href="./contacto.html"><h3>CONTACTO</h3></a></div>
         </nav>
-        <main>
+        <main id="contacto_main">
             <form method="post" enctype="multipart/form-data">
                 <fieldset id="contactanos">
                     <legend><h2>Contáctanos</h2></legend>
@@ -33,37 +33,40 @@
                         <option value="Soporte técnico">Donaciones</option>
                     </select>
                     <textarea id="comentario" rows="12" cols="120" aria-required="true" placeholder="Tu comentario"></textarea><br>
-                    <div id="userData">
-                        <input size="40" aria-required="true" placeholder="Nombre*" value="" type="text" name="tu-nombre"><br>
-                        <input size="40" aria-required="true" placeholder="Correo electrónico*" value="" type="email" name="tu-correo"><br>
-                        <input size="40" aria-required="false" placeholder="Numero de teléfono" value="" type="number" name="tu-numero"><br>
+                    <div id="datos_usuario">
+                        <input type="text" aria-required="true" placeholder="Nombre*" value="" name="usuario_nombre"><br>
+                        <input type="text" placeholder="Apellidos" value="" name="usuario_apellidos"><br>
+                        <input type="email" aria-required="true"  placeholder="Correo electrónico*" value=""  name="usuario_correo"><br>
+                        <input type="tel" placeholder="Numero de teléfono" value="" name="usuario_telefono"><br>
                     </div>
-                    <p id="Enviar">Enviar</p>
+                    <a><button id="enviar_boton">Enviar</button></a>
                 </fieldset>
             </form>
             <fieldset id="encuentranos">
                 <legend><h2>Encuéntranos</h2></legend>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.3525356731147!2d2.183943876619199!3d41.453268591905285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697559625096!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="contactMethod">
+                <div class="metodo_contacto">
                     <img src="./images/map.png" width="50" height="60">
                     <p>Carrer d'Aiguablava, 121<br>
                         Barcelona 08033</p>
                 </div>
-                <div class="contactMethod">
+                <div class="metodo_contacto">
                     <img src="./images/phone.png" width="50" height="60">
                     <p>+34 937 070 020</p>
                 </div>
             </fieldset>
         </main>
         <footer>
-            <div id="footer-left">
-                <p>FACEBOOK</p>
-                <p>TWITTER</p>
-                <p>INSTAGRAM</p>
-                <p id="lastmargin">RSS</p>
+            <div id="footer_top">
+                <div id="footer_left">
+                    <div><a>FACEBOOK</a></div>
+                    <div><a target="_blank" href="https://twitter.com/iTecBcn/">TWITTER</a></div>
+                    <div><a target="_blank" href="https://www.instagram.com/iTecBcn/">INSTAGRAM</a></div>
+                    <div><a>RSS</a></div>
+                </div>
+                <div id="footer_right"><a target="_blank" href="contacto.html">Carrer d'Aiguablava, 121<br>08033 Barcelona</a></div>
             </div>
-            <div id="footer-center"><p>Copyright © 2022-2023</p></div>
-            <div id="footer-right"><p>Carrer d'Aiguablava 121<br>08033 Barcelona</p></div>
+            <div id="footer_bottom"><p>Copyright © 2022-2023</p></div>
         </footer>
     </body>
 </html>
