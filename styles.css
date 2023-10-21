@@ -89,13 +89,23 @@ nav div h3:hover {
     width: 480px;
 }
 
-.article_videojuegos h2 { /* Titulo del videojuego */
+.titulo_juego_article {
+    text-decoration: none;
     color:#FFC045;
+    font-weight: bold;
+}
+
+.titulo_juego_article h2 {
     text-align: left;
     margin:0%;
     margin-left:3%;
-    
 }
+
+.titulo_juego_article:hover {
+    text-decoration:underline black 3px;
+    cursor:pointer;
+}
+
 
 .article_videojuegos p { /* Texto */
     text-align:left;
@@ -208,13 +218,21 @@ nav div h3:hover {
     border-color: #FFC045;
 }
 
-.article_noticias h2 {
-    color: #FFC045;
+.titulo_news_article {
     text-align: center;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 0%;
+    color:#FFC045;
+}
+
+.titulo_news_article h2 {
+    text-align: center;
+    margin-bottom:0%;
+    margin:0%;
+    font-weight: bold;
+}
+
+.titulo_news_article:hover {
+    text-decoration:underline black 3px;
+    cursor:pointer;
 }
 
 .article_noticias p {
