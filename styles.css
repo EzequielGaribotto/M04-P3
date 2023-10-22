@@ -452,13 +452,20 @@ nav h3:hover {
 .portada img {
     transition: all 0.5s ease-in-out;
     border-radius:8px;
-    width:140px;
-    height:210px;
+    width:186px;
+    height:280px;
 }
 
 .portada img:hover {
     transform: scale(1.2);
     cursor:pointer;
+}
+
+.detalle_anchor {
+    cursor:default;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
 }
 
 .ver_detalle {
