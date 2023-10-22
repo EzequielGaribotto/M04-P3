@@ -131,9 +131,11 @@ nav h3:hover {
 .mas_info { /* Boton mas info */
     float:right;
     margin-right: 2.5%;
+    margin-bottom:2.5%;
     padding:1.0%;
     padding-top:1.5%;
     padding-bottom:1.5%;
+
     
     border-style: groove;
     border-radius: 5px;
@@ -533,6 +535,10 @@ nav h3:hover {
 
 fieldset {
     background-color: rgb(239, 235, 235);
+    border-width:3px;
+    border-color:#FFC045;
+    border-radius:30px;
+    border-style: groove;
 }
 
 legend {
@@ -670,6 +676,7 @@ legend {
     border-style: dashed;
     border-color:#FFC045;
     border-width: 3px;
+    border-radius:20px;
     background-color: rgb(239, 235, 235);
     margin-bottom:5%;
 }
@@ -734,7 +741,12 @@ legend {
     border-style: dashed;
     border-color:#FFC045;
     border-width: 3px;
+    border-radius:20px;
     background-color: rgb(239, 235, 235);
+}
+
+#mapa {
+    border-radius: 30px;
 }
 
 .metodo_contacto {

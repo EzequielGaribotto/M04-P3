@@ -25,7 +25,7 @@
             <form method="post" enctype="multipart/form-data">
                 <fieldset id="contactanos">
                     <legend><h2>Contáctanos</h2></legend>
-                    <select id="topico" aria-required="true" name="topico" >
+                    <select id="topico" name="topico" >
                         <option value="">Tópico*</option>
                         <option value="Soporte técnico">Soporte técnico</option>
                         <option value="Soporte técnico">Reportes</option>
@@ -34,9 +34,9 @@
                     </select>
                     <textarea id="comentario" rows="12" cols="120" aria-required="true" placeholder="Tu comentario"></textarea><br>
                     <div id="datos_usuario">
-                        <input type="text" aria-required="true" placeholder="Nombre*" value="" name="usuario_nombre"><br>
+                        <input type="text" placeholder="Nombre*" value="" name="usuario_nombre"><br>
                         <input type="text" placeholder="Apellidos" value="" name="usuario_apellidos"><br>
-                        <input type="email" aria-required="true"  placeholder="Correo electrónico*" value=""  name="usuario_correo"><br>
+                        <input type="email" placeholder="Correo electrónico*" value=""  name="usuario_correo"><br>
                         <input type="tel" placeholder="Numero de teléfono" value="" name="usuario_telefono"><br>
                     </div>
                     <a><button id="enviar_boton">Enviar</button></a>
@@ -44,7 +44,7 @@
             </form>
             <fieldset id="encuentranos">
                 <legend><h2>Encuéntranos</h2></legend>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.3525356731147!2d2.183943876619199!3d41.453268591905285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697559625096!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.3525356731147!2d2.183943876619199!3d41.453268591905285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1697559625096!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="metodo_contacto">
                     <img src="./images/map.png" width="50" height="60">
                     <p>Carrer d'Aiguablava, 121<br>
